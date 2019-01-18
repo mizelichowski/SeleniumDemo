@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Demo Test Suite">
+    <test name="SimpleFormDemoTest">
+        <parameter name="message" value="Haha"/>
+        <parameter name="a" value="1"/>
+        <parameter name="b" value="9"/>
+        <classes>
+            <class name="seleniumdemo.tests.inputforms.simpleformdemo.SimpleFormDemoTest"/>
+        </classes>
+    </test>
+</suite>

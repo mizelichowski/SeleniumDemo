@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import seleniumdemo.driver.DriverManager;
 import seleniumdemo.driver.DriverManagerFactory;
 import seleniumdemo.driver.DriverType;
-import seleniumdemo.pageobjects.inputforms.simpleformdemo.SimpleFormDemo;
+import seleniumdemo.pageobjects.inputforms.SimpleFormDemo;
 
 public class SimpleFormDemoTest {
     private DriverManager driverManager;

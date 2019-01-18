@@ -8,4 +8,9 @@
             <class name="seleniumdemo.tests.inputforms.simpleformdemo.SimpleFormDemoTest"/>
         </classes>
     </test>
+    <test name="CheckBoxDemoTest">
+        <classes>
+            <class name="seleniumdemo.tests.inputforms.simpleformdemo.CheckBoxDemoTest"/>
+        </classes>
+    </test>
 </suite>

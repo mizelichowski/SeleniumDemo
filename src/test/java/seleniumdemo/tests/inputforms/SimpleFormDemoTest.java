@@ -1,4 +1,4 @@
-package seleniumdemo.tests.inputforms.simpleformdemo;
+package seleniumdemo.tests.inputforms;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;

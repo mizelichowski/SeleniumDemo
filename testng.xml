@@ -5,12 +5,20 @@
         <parameter name="a" value="1"/>
         <parameter name="b" value="9"/>
         <classes>
-            <class name="seleniumdemo.tests.inputforms.simpleformdemo.SimpleFormDemoTest"/>
+            <class name="seleniumdemo.tests.inputforms.SimpleFormDemoTest"/>
         </classes>
     </test>
     <test name="CheckBoxDemoTest">
         <classes>
-            <class name="seleniumdemo.tests.inputforms.simpleformdemo.CheckBoxDemoTest"/>
+            <class name="seleniumdemo.tests.inputforms.CheckBoxDemoTest"/>
+        </classes>
+    </test>
+    <test name="RadioButtonsDemoTest">
+        <parameter name="type" value="MALE"/>
+        <parameter name="sexType" value="MALE"/>
+        <parameter name="ageGroupType" value="ZERO_TO_FIVE"/>
+        <classes>
+            <class name="seleniumdemo.tests.inputforms.RadioButtonsDemoTest"/>
         </classes>
     </test>
 </suite>

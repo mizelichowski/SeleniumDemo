@@ -1,7 +1,5 @@
 package seleniumdemo.driver;
 
-import java.awt.*;
-
 public class DriverManagerFactory {
 
     public static DriverManager getDriverManager(DriverType type) {

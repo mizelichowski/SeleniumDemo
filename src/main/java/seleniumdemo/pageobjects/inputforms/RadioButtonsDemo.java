@@ -17,22 +17,56 @@ public class RadioButtonsDemo {
     @FindBy(xpath = "//*[@id=\"easycont\"]/div/div[2]/div[1]/div[2]/label[2]/input")
     private WebElement femaleRadioButton;
 
-   @FindBy(xpath = "//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/div[1]/label[1]/input")
-   private WebElement groupMaleRadioButton;
+    @FindBy(xpath = "//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/div[1]/label[1]/input")
+    private WebElement groupMaleRadioButton;
 
-   @FindBy(xpath = "//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/div[1]/label[2]/input")
-   private WebElement groupFemaleRadioButton;
+    @FindBy(xpath = "//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/div[1]/label[2]/input")
+    private WebElement groupFemaleRadioButton;
 
-   @FindBy(xpath = "//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/div[2]/label[1]/input")
-   private WebElement zeroToFiveRadioButton;
+    @FindBy(xpath = "//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/div[2]/label[1]/input")
+    private WebElement zeroToFiveRadioButton;
 
-   @FindBy(xpath = "//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/div[2]/label[2]/input")
-   private WebElement fiveToFifteenRadioButton;
+    @FindBy(xpath = "//*[@id=\"easycont\"]/div/div[2]/div[2]/div[2]/div[2]/label[2]/input")
+    private WebElement fiveToFifteenRadioButton;
 
-    public void clickRadioButton(String type) {
-        if (type.equals("Male")) {
+    @FindBy(xpath = "//input[@value='15 - 50']")
+    private WebElement fifteenToFiftyRadioButton;
+
+    @FindBy(css = "#buttoncheck")
+    private WebElement getCheckedValueButton;
+
+    @FindBy(xpath = "//button[contains(text(),'Get values')]")
+    private WebElement getValuesButton;
+
+    public void clickRadioButton(RadioButtonSexType type) {
+        if (type.equals(RadioButtonSexType.MALE)) {
             maleRadioButton.click();
+        } else {
+            femaleRadioButton.click();
         }
-        femaleRadioButton.click();
+    }
+
+    public void clickGetCheckedValueButton() {
+        getCheckedValueButton.click();
+    }
+
+    public void clickSexAndAgeGroupButtons(RadioButtonSexType sexType, RadioButtonAgeGroupType ageGroupType) {
+        if (sexType.equals(RadioButtonSexType.MALE)) {
+            groupMaleRadioButton.click();
+        } else {
+            groupFemaleRadioButton.click();
+        }
+
+        if (ageGroupType.equals(RadioButtonAgeGroupType.ZERO_TO_FIVE)) {
+            zeroToFiveRadioButton.click();
+        } else if (ageGroupType.equals(RadioButtonAgeGroupType.FIVE_TO_FIFTEEN)) {
+            fiveToFifteenRadioButton.click();
+        } else {
+            fifteenToFiftyRadioButton.click();
+        }
+    }
+
+    public void clickGetValuesButton() {
+        getValuesButton.click();
     }
 }

@@ -3,11 +3,15 @@ package seleniumdemo.tests.inputforms;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import seleniumdemo.driver.DriverManager;
 import seleniumdemo.driver.DriverManagerFactory;
 import seleniumdemo.driver.DriverType;
 import seleniumdemo.pageobjects.inputforms.CheckBoxDemo;
+import seleniumdemo.pageobjects.inputforms.TickOptions;
+
+import java.util.Collections;
 
 public class CheckBoxDemoTest {
     private DriverManager driverManager;
@@ -28,8 +32,9 @@ public class CheckBoxDemoTest {
         checkBoxDemo.clickSingleCheckBox();
     }
 
+    @Parameters("options")
     @Test
-    public void tickAllCheckBoxes() {
-        checkBoxDemo.clickCheckAllButton();
+    public void tickCheckBoxes(TickOptions options) {
+        checkBoxDemo.tickOptions(Collections.singletonList(options));
     }
 }

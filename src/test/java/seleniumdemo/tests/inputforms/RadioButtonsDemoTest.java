@@ -8,8 +8,6 @@ import org.testng.annotations.Test;
 import seleniumdemo.driver.DriverManager;
 import seleniumdemo.driver.DriverManagerFactory;
 import seleniumdemo.driver.DriverType;
-import seleniumdemo.pageobjects.inputforms.RadioButtonAgeGroupType;
-import seleniumdemo.pageobjects.inputforms.RadioButtonSexType;
 import seleniumdemo.pageobjects.inputforms.RadioButtonsDemo;
 
 public class RadioButtonsDemoTest {
@@ -28,14 +26,15 @@ public class RadioButtonsDemoTest {
 
     @Parameters("type")
     @Test
-    public void clickRadioButton(RadioButtonSexType type) {
+    public void clickRadioButton(RadioButtonsDemo.RadioButtonSexType type) {
         radioButtonsDemo.clickRadioButton(type);
         radioButtonsDemo.clickGetCheckedValueButton();
     }
 
     @Parameters({"sexType", "ageGroupType"})
     @Test
-    public void clickSexAndAgeGroupButtons(RadioButtonSexType sexType, RadioButtonAgeGroupType ageGroupType) {
+    public void clickSexAndAgeGroupButtons(RadioButtonsDemo.RadioButtonSexType sexType,
+                                           RadioButtonsDemo.RadioButtonAgeGroupType ageGroupType) {
         radioButtonsDemo.clickSexAndAgeGroupButtons(sexType, ageGroupType);
         radioButtonsDemo.clickGetValuesButton();
     }

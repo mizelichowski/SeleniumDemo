@@ -1,25 +1,50 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Selenium Demo Test Suite">
+<suite name="SeleniumDemoTestSuite">
     <!--<test name="SimpleFormDemoTest">-->
-        <!--<parameter name="message" value="Haha"/>-->
-        <!--<parameter name="a" value="1"/>-->
-        <!--<parameter name="b" value="9"/>-->
-        <!--<classes>-->
-            <!--<class name="seleniumdemo.tests.inputforms.SimpleFormDemoTest"/>-->
-        <!--</classes>-->
+    <!--<parameter name="message" value="Haha"/>-->
+    <!--<parameter name="a" value="1"/>-->
+    <!--<parameter name="b" value="9"/>-->
+    <!--<classes>-->
+    <!--<class name="seleniumdemo.tests.inputforms.SimpleFormDemoTest"/>-->
+    <!--</classes>-->
     <!--</test>-->
-    <test name="CheckBoxDemoTest">
-        <parameter name="options" value="OPTION1"/>
-        <classes>
-            <class name="seleniumdemo.tests.inputforms.CheckBoxDemoTest"/>
-        </classes>
+    <!--<test name="CheckBoxDemoTest">-->
+    <!--<parameter name="options" value="OPTION1"/>-->
+    <!--<classes>-->
+    <!--<class name="seleniumdemo.tests.inputforms.CheckBoxDemoTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <test name="RadioButtonsDemoTest">
+    <parameter name="type" value="MALE"/>
+    <parameter name="sexType" value="MALE"/>
+    <parameter name="ageGroupType" value="ZERO_TO_FIVE"/>
+    <classes>
+    <class name="seleniumdemo.tests.inputforms.RadioButtonsDemoTest"/>
+    </classes>
     </test>
-    <!--<test name="RadioButtonsDemoTest">-->
-        <!--<parameter name="type" value="MALE"/>-->
-        <!--<parameter name="sexType" value="MALE"/>-->
-        <!--<parameter name="ageGroupType" value="ZERO_TO_FIVE"/>-->
+    <!--<test name="DropdownDemoTest">-->
+    <!--<parameter name="visibleText" value="Monday"/>-->
+    <!--<parameter name="selectedValue1" value="California"/>-->
+    <!--<parameter name="selectedValue2" value="New Jersey"/>-->
+    <!--<parameter name="selectedValue3" value="Texas"/>-->
+    <!--<classes>-->
+    <!--<class name="seleniumdemo.tests.inputforms.DropdownDemoTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="InputFormSubmitDemoTest">-->
+        <!--<parameter name="firstName" value="Jan"/>-->
+        <!--<parameter name="lastName" value="Kowalski"/>-->
+        <!--<parameter name="email" value="some.email@email.com"/>-->
+        <!--<parameter name="phone" value="12345678"/>-->
+        <!--<parameter name="address" value="SomeAddress"/>-->
+        <!--<parameter name="city" value="New York"/>-->
+        <!--<parameter name="state" value="Alaska"/>-->
+        <!--<parameter name="zipCode" value="98540"/>-->
+        <!--<parameter name="website" value="http://www.website.com"/>-->
+        <!--<parameter name="hosting" value="true"/>-->
+        <!--<parameter name="description" value="Just some random description"/>-->
         <!--<classes>-->
-            <!--<class name="seleniumdemo.tests.inputforms.RadioButtonsDemoTest"/>-->
+            <!--<class name="seleniumdemo.tests.inputforms.InputFormSubmitDemoTest"/>-->
         <!--</classes>-->
     <!--</test>-->
 </suite>

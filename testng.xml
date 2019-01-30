@@ -14,14 +14,14 @@
     <!--<class name="seleniumdemo.tests.inputforms.CheckBoxDemoTest"/>-->
     <!--</classes>-->
     <!--</test>-->
-    <test name="RadioButtonsDemoTest">
-    <parameter name="type" value="MALE"/>
-    <parameter name="sexType" value="MALE"/>
-    <parameter name="ageGroupType" value="ZERO_TO_FIVE"/>
-    <classes>
-    <class name="seleniumdemo.tests.inputforms.RadioButtonsDemoTest"/>
-    </classes>
-    </test>
+    <!--<test name="RadioButtonsDemoTest">-->
+    <!--<parameter name="type" value="MALE"/>-->
+    <!--<parameter name="sexType" value="MALE"/>-->
+    <!--<parameter name="ageGroupType" value="ZERO_TO_FIVE"/>-->
+    <!--<classes>-->
+    <!--<class name="seleniumdemo.tests.inputforms.RadioButtonsDemoTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
     <!--<test name="DropdownDemoTest">-->
     <!--<parameter name="visibleText" value="Monday"/>-->
     <!--<parameter name="selectedValue1" value="California"/>-->
@@ -47,4 +47,7 @@
             <!--<class name="seleniumdemo.tests.inputforms.InputFormSubmitDemoTest"/>-->
         <!--</classes>-->
     <!--</test>-->
+    <test name="">
+
+    </test>
 </suite>

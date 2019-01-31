@@ -9,8 +9,6 @@ import seleniumdemo.driver.DriverManager;
 import seleniumdemo.driver.DriverManagerFactory;
 import seleniumdemo.driver.DriverType;
 import seleniumdemo.pageobjects.inputforms.CheckBoxDemo;
-import seleniumdemo.pageobjects.inputforms.TickOptions;
-
 import java.util.Collections;
 
 public class CheckBoxDemoTest {
@@ -34,7 +32,7 @@ public class CheckBoxDemoTest {
 
     @Parameters("options")
     @Test
-    public void tickCheckBoxes(TickOptions options) {
+    public void tickCheckBoxes(CheckBoxDemo.TickOptions options) {
         checkBoxDemo.tickOptions(Collections.singletonList(options));
     }
 }

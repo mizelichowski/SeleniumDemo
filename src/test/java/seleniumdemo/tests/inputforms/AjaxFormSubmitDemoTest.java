@@ -24,7 +24,7 @@ public class AjaxFormSubmitDemoTest {
         driver.get(url);
     }
 
-    @Parameters()
+    @Parameters({"name", "comment"})
     @Test
     public void fillInFields(String name, String comment) {
         ajaxFormSubmitDemo.fillInTitle(name);

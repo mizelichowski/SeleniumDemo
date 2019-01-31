@@ -40,7 +40,7 @@ public class CheckBoxDemo {
     }
 
     public void tickOptions(List<TickOptions> tickOptions) {
-        if(tickOptions.contains(TickOptions.OPTION1)) {
+        if (tickOptions.contains(TickOptions.OPTION1)) {
             option1Button.click();
         } else if (tickOptions.contains(TickOptions.OPTION2)) {
             option2Button.click();
@@ -49,5 +49,12 @@ public class CheckBoxDemo {
         } else if (tickOptions.contains(TickOptions.OPTION4)) {
             option4Button.click();
         }
+    }
+
+    public enum TickOptions {
+        OPTION1,
+        OPTION2,
+        OPTION3,
+        OPTION4
     }
 }

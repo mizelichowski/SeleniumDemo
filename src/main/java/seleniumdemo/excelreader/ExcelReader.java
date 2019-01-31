@@ -13,9 +13,9 @@ import java.util.HashMap;
 public class ExcelReader {
     private final static String LOGIN_INFO = "src/resources/excel/LoginInfo.xlsx";
 
-    public HashMap<String, String> readLoginInfo(File file) throws IOException, InvalidFormatException {
-        FileInputStream fileInputStream = new FileInputStream(new File(LOGIN_INFO));
-        Workbook workbook = new XSSFWorkbook(file);
+    public HashMap<String, String> readLoginInfo(FileInputStream fileInputStream) throws IOException, InvalidFormatException {
+        fileInputStream = new FileInputStream(new File(LOGIN_INFO));
+        Workbook workbook = new XSSFWorkbook(fileInputStream);
         Sheet sheet = workbook.getSheetAt(0);
         HashMap<String, String> rowData = new HashMap<>();
 

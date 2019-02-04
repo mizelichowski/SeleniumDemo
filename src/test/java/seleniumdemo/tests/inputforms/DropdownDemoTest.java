@@ -15,7 +15,7 @@ public class DropdownDemoTest {
     private DriverManager driverManager;
     private WebDriver driver;
     private DropdownDemo dropdownDemo;
-    private String url = "https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html";
+    private final String url = "https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html";
 
     @BeforeTest
     public void init() {

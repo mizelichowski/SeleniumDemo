@@ -14,7 +14,7 @@ public class RadioButtonsDemoTest {
     private DriverManager driverManager;
     private WebDriver driver;
     private RadioButtonsDemo radioButtonsDemo;
-    private String url = "https://www.seleniumeasy.com/test/basic-radiobutton-demo.html";
+    private final String url = "https://www.seleniumeasy.com/test/basic-radiobutton-demo.html";
 
     @BeforeTest
     public void init() {

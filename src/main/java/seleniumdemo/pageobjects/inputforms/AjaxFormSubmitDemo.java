@@ -20,6 +20,9 @@ public class AjaxFormSubmitDemo {
     @FindBy(css = "#btn-submit")
     private WebElement submitButton;
 
+    @FindBy(id = "submit-control")
+    private WebElement ajaxResponse;
+
     public void fillInTitle(String title) {
         nameInputField.clear();
         nameInputField.sendKeys(title);
@@ -32,5 +35,9 @@ public class AjaxFormSubmitDemo {
 
     public void clickSubmitButton() {
         submitButton.click();
+    }
+
+    public String getAjaxResponse() {
+        return ajaxResponse.getText();
     }
 }

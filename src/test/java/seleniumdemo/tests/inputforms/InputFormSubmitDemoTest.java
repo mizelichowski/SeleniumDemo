@@ -16,7 +16,7 @@ public class InputFormSubmitDemoTest {
     private DriverManager driverManager;
     private WebDriver driver;
     private InputFormSubmitDemo inputFormSubmitDemo;
-    private String url = "https://www.seleniumeasy.com/test/input-form-demo.html";
+    private final String url = "https://www.seleniumeasy.com/test/input-form-demo.html";
 
     @BeforeTest
     public void init() {

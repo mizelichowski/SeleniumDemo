@@ -15,7 +15,7 @@ public class SimpleFormDemoTest {
     private DriverManager driverManager;
     private WebDriver driver;
     private SimpleFormDemo simpleFormDemo;
-    private String url = "https://www.seleniumeasy.com/test/basic-first-form-demo.html";
+    private final String url = "https://www.seleniumeasy.com/test/basic-first-form-demo.html";
 
     @BeforeTest
     public void init() {

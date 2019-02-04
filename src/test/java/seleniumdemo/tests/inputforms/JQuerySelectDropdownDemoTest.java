@@ -8,31 +8,25 @@ import org.testng.annotations.Test;
 import seleniumdemo.driver.DriverManager;
 import seleniumdemo.driver.DriverManagerFactory;
 import seleniumdemo.driver.DriverType;
-import seleniumdemo.pageobjects.inputforms.CheckBoxDemo;
-import java.util.Collections;
+import seleniumdemo.pageobjects.inputforms.JQuerySelectDropdownDemo;
 
-public class CheckBoxDemoTest {
+public class JQuerySelectDropdownDemoTest {
     private DriverManager driverManager;
     private WebDriver driver;
-    private CheckBoxDemo checkBoxDemo;
-    private final String url = "https://www.seleniumeasy.com/test/basic-checkbox-demo.html";
+    private JQuerySelectDropdownDemo jQuerySelectDropdownDemo;
+    private final String url = "https://www.seleniumeasy.com/test/jquery-dropdown-search-demo.html";
 
     @BeforeTest
     public void init() {
         driverManager = DriverManagerFactory.getDriverManager(DriverType.CHROME);
         driver = driverManager.getWebDriver();
-        checkBoxDemo = PageFactory.initElements(driver, CheckBoxDemo.class);
+        jQuerySelectDropdownDemo = PageFactory.initElements(driver, JQuerySelectDropdownDemo.class);
         driver.get(url);
     }
 
+    @Parameters("country")
     @Test
-    public void tickSingleCheckbox() {
-        checkBoxDemo.clickSingleCheckBox();
-    }
-
-    @Parameters("options")
-    @Test
-    public void tickCheckBoxes(CheckBoxDemo.TickOptions options) {
-        checkBoxDemo.tickOptions(Collections.singletonList(options));
+    public void selectCountry(String country) {
+        jQuerySelectDropdownDemo.selectCountry(country);
     }
 }

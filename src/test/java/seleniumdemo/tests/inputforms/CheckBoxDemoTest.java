@@ -1,19 +1,17 @@
 package seleniumdemo.tests.inputforms;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import seleniumdemo.driver.DriverManager;
 import seleniumdemo.driver.DriverManagerFactory;
 import seleniumdemo.driver.DriverType;
 import seleniumdemo.pageobjects.inputforms.CheckBoxDemo;
+import seleniumdemo.tests.TestBase;
+
 import java.util.Collections;
 
-public class CheckBoxDemoTest {
-    private DriverManager driverManager;
-    private WebDriver driver;
+public class CheckBoxDemoTest extends TestBase {
     private CheckBoxDemo checkBoxDemo;
     private final String url = "https://www.seleniumeasy.com/test/basic-checkbox-demo.html";
 

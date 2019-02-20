@@ -1,28 +1,28 @@
 package seleniumdemo.tests.inputforms;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import seleniumdemo.driver.DriverManager;
 import seleniumdemo.driver.DriverManagerFactory;
 import seleniumdemo.driver.DriverType;
 import seleniumdemo.pageobjects.inputforms.AjaxFormSubmitDemo;
+import seleniumdemo.tests.TestBase;
 
 // to do: validate ajax response
 
-public class AjaxFormSubmitDemoTest {
+public class AjaxFormSubmitDemoTest extends TestBase {
     private DriverManager driverManager;
-    private WebDriver driver;
+
     private AjaxFormSubmitDemo ajaxFormSubmitDemo;
     private final String url = "https://www.seleniumeasy.com/test/ajax-form-submit-demo.html";
 
-    @BeforeTest
+    @BeforeClass
     public void init() {
         driverManager = DriverManagerFactory.getDriverManager(DriverType.CHROME);
         driver = driverManager.getWebDriver();

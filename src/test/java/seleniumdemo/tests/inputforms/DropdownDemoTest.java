@@ -1,19 +1,15 @@
 package seleniumdemo.tests.inputforms;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import seleniumdemo.driver.DriverManager;
 import seleniumdemo.driver.DriverManagerFactory;
 import seleniumdemo.driver.DriverType;
 import seleniumdemo.pageobjects.inputforms.DropdownDemo;
+import seleniumdemo.tests.TestBase;
 
-public class DropdownDemoTest {
-    private DriverManager driverManager;
-    private WebDriver driver;
+public class DropdownDemoTest extends TestBase {
     private DropdownDemo dropdownDemo;
     private final String url = "https://www.seleniumeasy.com/test/basic-select-dropdown-demo.html";
 

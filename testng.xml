@@ -1,13 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="SeleniumDemoTestSuite">
-    <!--<test name="SimpleFormDemoTest">-->
-    <!--<parameter name="message" value="Haha"/>-->
-    <!--<parameter name="a" value="1"/>-->
-    <!--<parameter name="b" value="9"/>-->
-    <!--<classes>-->
-    <!--<class name="seleniumdemo.tests.inputforms.SimpleFormDemoTest"/>-->
-    <!--</classes>-->
-    <!--</test>-->
+    <test name="SimpleFormDemoTest">
+    <parameter name="message" value="Haha"/>
+    <parameter name="a" value="1"/>
+    <parameter name="b" value="9"/>
+    <classes>
+    <class name="seleniumdemo.tests.inputforms.SimpleFormDemoTest"/>
+    </classes>
+    </test>
     <!--<test name="CheckBoxDemoTest">-->
     <!--<parameter name="options" value="OPTION1"/>-->
     <!--<classes>-->

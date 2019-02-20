@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 public class JQuerySelectDropdownDemo {
     private WebDriver driver;
 
-    @FindBy(css = "#select2-country-container")
+    @FindBy(xpath = "//span[@class='select2 select2-container select2-container--default select2-con")
     private WebElement selectCountryDropdown;
 
     @FindBy(xpath = "//ul[@class='select2-selection__rendered']")
@@ -22,7 +22,6 @@ public class JQuerySelectDropdownDemo {
 
     public void selectCountry(String country) {
         Select selectCountry = new Select(selectCountryDropdown);
-        selectCountry.deselectAll();
         selectCountry.selectByVisibleText(country);
     }
 

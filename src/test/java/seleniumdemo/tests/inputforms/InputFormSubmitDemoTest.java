@@ -1,20 +1,15 @@
 package seleniumdemo.tests.inputforms;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.ITestContext;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import seleniumdemo.driver.DriverManager;
 import seleniumdemo.driver.DriverManagerFactory;
 import seleniumdemo.driver.DriverType;
 import seleniumdemo.pageobjects.inputforms.InputFormSubmitDemo;
+import seleniumdemo.tests.TestBase;
 
-public class InputFormSubmitDemoTest {
-    private DriverManager driverManager;
-    private WebDriver driver;
+public class InputFormSubmitDemoTest extends TestBase {
     private InputFormSubmitDemo inputFormSubmitDemo;
     private final String url = "https://www.seleniumeasy.com/test/input-form-demo.html";
 

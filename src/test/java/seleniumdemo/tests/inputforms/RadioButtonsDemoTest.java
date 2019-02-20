@@ -1,18 +1,15 @@
 package seleniumdemo.tests.inputforms;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import seleniumdemo.driver.DriverManager;
 import seleniumdemo.driver.DriverManagerFactory;
 import seleniumdemo.driver.DriverType;
 import seleniumdemo.pageobjects.inputforms.RadioButtonsDemo;
+import seleniumdemo.tests.TestBase;
 
-public class RadioButtonsDemoTest {
-    private DriverManager driverManager;
-    private WebDriver driver;
+public class RadioButtonsDemoTest extends TestBase {
     private RadioButtonsDemo radioButtonsDemo;
     private final String url = "https://www.seleniumeasy.com/test/basic-radiobutton-demo.html";
 

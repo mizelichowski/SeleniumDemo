@@ -3,12 +3,12 @@ package seleniumdemo.pageobjects.inputforms;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import seleniumdemo.pageobjects.BasePageObject;
 
-public class SimpleFormDemo {
-    private WebDriver driver;
+public class SimpleFormDemo extends BasePageObject {
 
     public SimpleFormDemo(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     @FindBy(css = "#user-message")
@@ -51,5 +51,4 @@ public class SimpleFormDemo {
     public void clickGetTotalBox() {
         getTotalBox.click();
     }
-
 }

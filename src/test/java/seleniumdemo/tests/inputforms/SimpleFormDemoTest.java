@@ -24,21 +24,26 @@ public class SimpleFormDemoTest extends TestBase {
         driver.get(url);
     }
 
+    @Test
+    public void prepareTests() {
+        ExtentTest test = extent.createTest("Preparing Tests");
+        test.log(Status.PASS, MarkupHelper.createLabel(url + " has been entered.", ExtentColor.GREEN));
+    }
+
     @Parameters("message")
     @Test
     public void singleInputFieldTest(String message) {
-        ExtentTest test = extent.createTest("First Test");
-        test.log(Status.PASS, MarkupHelper.createLabel(url + " has been opened.", ExtentColor.GREEN));
+        ExtentTest test = extent.createTest("Single Input Field Test");
         simpleFormDemo.enterMessage(message);
+        test.log(Status.PASS, MarkupHelper.createLabel(message + " has been entered.", ExtentColor.GREEN));
         simpleFormDemo.clickShowMessageButton();
         Assert.assertEquals(message, "Haha");
-
     }
 
     @Parameters({"a", "b"})
     @Test
     public void twoInputFieldsTest(String a, String b) {
-        ExtentTest test = extent.createTest("Second Test");
+        ExtentTest test = extent.createTest("Two Input Fields Test");
         int aValue = Integer.parseInt(a);
         int bValue = Integer.parseInt(b);
 

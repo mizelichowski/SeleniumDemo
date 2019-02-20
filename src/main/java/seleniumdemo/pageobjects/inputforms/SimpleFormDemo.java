@@ -3,9 +3,9 @@ package seleniumdemo.pageobjects.inputforms;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import seleniumdemo.pageobjects.BasePageObject;
+import seleniumdemo.pageobjects.PageObjectBase;
 
-public class SimpleFormDemo extends BasePageObject {
+public class SimpleFormDemo extends PageObjectBase {
 
     public SimpleFormDemo(WebDriver driver) {
         super(driver);

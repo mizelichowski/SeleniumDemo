@@ -45,7 +45,7 @@ public class SimpleFormDemoTest extends TestBase {
     public void twoInputFieldsTest(String a, String b) {
         ExtentTest test = extent.createTest("Two Input Fields Test");
         int aValue = Integer.parseInt(a);
-        int bValue = Integer.parseInt(b);
+        int bValue = Integer.parseInt(b); a
 
         simpleFormDemo.enterABoxValue(a);
         test.log(Status.PASS, MarkupHelper.createLabel(a + " has been entered.", ExtentColor.GREEN));
